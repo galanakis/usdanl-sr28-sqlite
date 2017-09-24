@@ -4,11 +4,11 @@
 # https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/dnload/sr28asc.zip
 
 echo "Downloading the ASCII database"
-curl -sO https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/dnload/sr28asc.zip
+curl -O https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/dnload/sr28asc.zip
 
 echo "Uncompressing"
 # Uncompressing the data
-unzip -q ./sr28asc.zip
+unzip -q -d sr28asc ./sr28asc.zip
 
 echo "Normalizing the data"
 # Remove tildas
